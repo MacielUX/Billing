@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favb.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <title>AR Billing | Log</title>
+</head>
+<body>
+  <div class="nav">
+    <div class="navnest">
+      <a href="https://home.jbssa.com/" target="_blank">
+        <img src="jbsw.png" alt="">
+      </a>
+      <h1>Billing Services</h1> 
+    </div>
+    <div class="auto">
+      <div class="spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+     <h1>AutoSave</h1>
+     <div class="theme-switch">
+      <input type="checkbox" id="theme-checkbox" />
+      <label for="theme-checkbox">
+        <div></div>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </span>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+            ></path>
+          </svg>
+        </span>
+      </label>
+    </div>
+    </div>
+    
+
+    
+  </div>
+
+  <div class="sidebarcontainer" id="sidebarContainer">
+    <div class="sidebar" id="sidebar">
+      <h1>Sidebar Content</h1>
+    </div>
+    <div class="inputy">
+      <button class="value">
+        <svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m1.5 13v1a.5.5 0 0 0 .3379.4731 18.9718 18.9718 0 0 0 6.1621 1.0269 18.9629 18.9629 0 0 0 6.1621-1.0269.5.5 0 0 0 .3379-.4731v-1a6.5083 6.5083 0 0 0 -4.461-6.1676 3.5 3.5 0 1 0 -4.078 0 6.5083 6.5083 0 0 0 -4.461 6.1676zm4-9a2.5 2.5 0 1 1 2.5 2.5 2.5026 2.5026 0 0 1 -2.5-2.5zm2.5 3.5a5.5066 5.5066 0 0 1 5.5 5.5v.6392a18.08 18.08 0 0 1 -11 0v-.6392a5.5066 5.5066 0 0 1 5.5-5.5z" fill="#7D8590"></path></svg>
+        Profile
+      </button>
+      <button class="value">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="Line"><path d="m17.074 30h-2.148c-1.038 0-1.914-.811-1.994-1.846l-.125-1.635c-.687-.208-1.351-.484-1.985-.824l-1.246 1.067c-.788.677-1.98.631-2.715-.104l-1.52-1.52c-.734-.734-.78-1.927-.104-2.715l1.067-1.246c-.34-.635-.616-1.299-.824-1.985l-1.634-.125c-1.035-.079-1.846-.955-1.846-1.993v-2.148c0-1.038.811-1.914 1.846-1.994l1.635-.125c.208-.687.484-1.351.824-1.985l-1.068-1.247c-.676-.788-.631-1.98.104-2.715l1.52-1.52c.734-.734 1.927-.779 2.715-.104l1.246 1.067c.635-.34 1.299-.616 1.985-.824l.125-1.634c.08-1.034.956-1.845 1.994-1.845h2.148c1.038 0 1.914.811 1.994 1.846l.125 1.635c.687.208 1.351.484 1.985.824l1.246-1.067c.787-.676 1.98-.631 2.715.104l1.52 1.52c.734.734.78 1.927.104 2.715l-1.067 1.246c.34.635.616 1.299.824 1.985l1.634.125c1.035.079 1.846.955 1.846 1.993v2.148c0 1.038-.811 1.914-1.846 1.994l-1.635.125c-.208.687-.484 1.351-.824 1.985l1.067 1.246c.677.788.631 1.98-.104 2.715l-1.52 1.52c-.734.734-1.928.78-2.715.104l-1.246-1.067c-.635.34-1.299.616-1.985.824l-.125 1.634c-.079 1.035-.955 1.846-1.993 1.846zm-5.835-6.373c.848.53 1.768.912 2.734 1.135.426.099.739.462.772.898l.18 2.341 2.149-.001.18-2.34c.033-.437.347-.8.772-.898.967-.223 1.887-.604 2.734-1.135.371-.232.849-.197 1.181.089l1.784 1.529 1.52-1.52-1.529-1.784c-.285-.332-.321-.811-.089-1.181.53-.848.912-1.768 1.135-2.734.099-.426.462-.739.898-.772l2.341-.18h-.001v-2.148l-2.34-.18c-.437-.033-.8-.347-.898-.772-.223-.967-.604-1.887-1.135-2.734-.232-.37-.196-.849.089-1.181l1.529-1.784-1.52-1.52-1.784 1.529c-.332.286-.81.321-1.181.089-.848-.53-1.768-.912-2.734-1.135-.426-.099-.739-.462-.772-.898l-.18-2.341-2.148.001-.18 2.34c-.033.437-.347.8-.772.898-.967.223-1.887.604-2.734 1.135-.37.232-.849.197-1.181-.089l-1.785-1.529-1.52 1.52 1.529 1.784c.285.332.321.811.089 1.181-.53.848-.912 1.768-1.135 2.734-.099.426-.462.739-.898.772l-2.341.18.002 2.148 2.34.18c.437.033.8.347.898.772.223.967.604 1.887 1.135 2.734.232.37.196.849-.089 1.181l-1.529 1.784 1.52 1.52 1.784-1.529c.332-.287.813-.32 1.18-.089z" id="XMLID_1646_" fill="#7D8590"></path><path d="m16 23c-3.859 0-7-3.141-7-7s3.141-7 7-7 7 3.141 7 7-3.141 7-7 7zm0-12c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z" fill="#7D8590" id="XMLID_1645_"></path></svg>
+        Account
+      </button>
+    
+      <button class="value">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="svg8"><g transform="translate(-33.022 -30.617)" id="layer1"><path d="m49.021 31.617c-2.673 0-4.861 2.188-4.861 4.861 0 1.606.798 3.081 1.873 3.834h-7.896c-1.7 0-3.098 1.401-3.098 3.1s1.399 3.098 3.098 3.098h4.377l.223 2.641s-1.764 8.565-1.764 8.566c-.438 1.642.55 3.355 2.191 3.795s3.327-.494 3.799-2.191l2.059-5.189 2.059 5.189c.44 1.643 2.157 2.631 3.799 2.191s2.63-2.153 2.191-3.795l-1.764-8.566.223-2.641h4.377c1.699 0 3.098-1.399 3.098-3.098s-1.397-3.1-3.098-3.1h-7.928c1.102-.771 1.904-2.228 1.904-3.834 0-2.672-2.189-4.861-4.862-4.861zm0 2c1.592 0 2.861 1.27 2.861 2.861 0 1.169-.705 2.214-1.789 2.652-.501.203-.75.767-.563 1.273l.463 1.254c.145.393.519.654.938.654h8.975c.626 0 1.098.473 1.098 1.1s-.471 1.098-1.098 1.098h-5.297c-.52 0-.952.398-.996.916l-.311 3.701c-.008.096-.002.191.018.285 0 0 1.813 8.802 1.816 8.82.162.604-.173 1.186-.777 1.348s-1.184-.173-1.346-.777c-.01-.037-3.063-7.76-3.063-7.76-.334-.842-1.525-.842-1.859 0 0 0-3.052 7.723-3.063 7.76-.162.604-.741.939-1.346.777s-.939-.743-.777-1.348c.004-.019 1.816-8.82 1.816-8.82.02-.094.025-.189.018-.285l-.311-3.701c-.044-.518-.477-.916-.996-.916h-5.297c-.627 0-1.098-.471-1.098-1.098s.472-1.1 1.098-1.1h8.975c.419 0 .793-.262.938-.654l.463-1.254c.188-.507-.062-1.07-.563-1.273-1.084-.438-1.789-1.483-1.789-2.652.001-1.591 1.271-2.861 2.862-2.861z" id="path26276" fill="#7D8590"></path></g></svg>
+        Accessibility
+      </button>
+      <button class="value">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none"><path fill-rule="evenodd" fill="#7D8590" d="m11.9572 4.31201c-3.35401 0-6.00906 2.59741-6.00906 5.67742v3.29037c0 .1986-.05916.3927-.16992.5576l-1.62529 2.4193-.01077.0157c-.18701.2673-.16653.5113-.07001.6868.10031.1825.31959.3528.67282.3528h14.52603c.2546 0 .5013-.1515.6391-.3968.1315-.2343.1117-.4475-.0118-.6093-.0065-.0085-.0129-.0171-.0191-.0258l-1.7269-2.4194c-.121-.1695-.186-.3726-.186-.5809v-3.29037c0-1.54561-.6851-3.023-1.7072-4.00431-1.1617-1.01594-2.6545-1.67311-4.3019-1.67311zm-8.00906 5.67742c0-4.27483 3.64294-7.67742 8.00906-7.67742 2.2055 0 4.1606.88547 5.6378 2.18455.01.00877.0198.01774.0294.02691 1.408 1.34136 2.3419 3.34131 2.3419 5.46596v2.97007l1.5325 2.1471c.6775.8999.6054 1.9859.1552 2.7877-.4464.795-1.3171 1.4177-2.383 1.4177h-14.52603c-2.16218 0-3.55087-2.302-2.24739-4.1777l1.45056-2.1593zm4.05187 11.32257c0-.5523.44772-1 1-1h5.99999c.5523 0 1 .4477 1 1s-.4477 1-1 1h-5.99999c-.55228 0-1-.4477-1-1z" clip-rule="evenodd"></path></svg>
+        Notifications
+      </button>
+    </div>
+    <button id="toggleButton">+</button>
+  </div>
+
+  <div class="inputx">
+    <button class="value">
+      <svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m1.5 13v1a.5.5 0 0 0 .3379.4731 18.9718 18.9718 0 0 0 6.1621 1.0269 18.9629 18.9629 0 0 0 6.1621-1.0269.5.5 0 0 0 .3379-.4731v-1a6.5083 6.5083 0 0 0 -4.461-6.1676 3.5 3.5 0 1 0 -4.078 0 6.5083 6.5083 0 0 0 -4.461 6.1676zm4-9a2.5 2.5 0 1 1 2.5 2.5 2.5026 2.5026 0 0 1 -2.5-2.5zm2.5 3.5a5.5066 5.5066 0 0 1 5.5 5.5v.6392a18.08 18.08 0 0 1 -11 0v-.6392a5.5066 5.5066 0 0 1 5.5-5.5z" fill="#7D8590"></path></svg>
+      Profile
+    </button>
+    <button class="value">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="Line"><path d="m17.074 30h-2.148c-1.038 0-1.914-.811-1.994-1.846l-.125-1.635c-.687-.208-1.351-.484-1.985-.824l-1.246 1.067c-.788.677-1.98.631-2.715-.104l-1.52-1.52c-.734-.734-.78-1.927-.104-2.715l1.067-1.246c-.34-.635-.616-1.299-.824-1.985l-1.634-.125c-1.035-.079-1.846-.955-1.846-1.993v-2.148c0-1.038.811-1.914 1.846-1.994l1.635-.125c.208-.687.484-1.351.824-1.985l-1.068-1.247c-.676-.788-.631-1.98.104-2.715l1.52-1.52c.734-.734 1.927-.779 2.715-.104l1.246 1.067c.635-.34 1.299-.616 1.985-.824l.125-1.634c.08-1.034.956-1.845 1.994-1.845h2.148c1.038 0 1.914.811 1.994 1.846l.125 1.635c.687.208 1.351.484 1.985.824l1.246-1.067c.787-.676 1.98-.631 2.715.104l1.52 1.52c.734.734.78 1.927.104 2.715l-1.067 1.246c.34.635.616 1.299.824 1.985l1.634.125c1.035.079 1.846.955 1.846 1.993v2.148c0 1.038-.811 1.914-1.846 1.994l-1.635.125c-.208.687-.484 1.351-.824 1.985l1.067 1.246c.677.788.631 1.98-.104 2.715l-1.52 1.52c-.734.734-1.928.78-2.715.104l-1.246-1.067c-.635.34-1.299.616-1.985.824l-.125 1.634c-.079 1.035-.955 1.846-1.993 1.846zm-5.835-6.373c.848.53 1.768.912 2.734 1.135.426.099.739.462.772.898l.18 2.341 2.149-.001.18-2.34c.033-.437.347-.8.772-.898.967-.223 1.887-.604 2.734-1.135.371-.232.849-.197 1.181.089l1.784 1.529 1.52-1.52-1.529-1.784c-.285-.332-.321-.811-.089-1.181.53-.848.912-1.768 1.135-2.734.099-.426.462-.739.898-.772l2.341-.18h-.001v-2.148l-2.34-.18c-.437-.033-.8-.347-.898-.772-.223-.967-.604-1.887-1.135-2.734-.232-.37-.196-.849.089-1.181l1.529-1.784-1.52-1.52-1.784 1.529c-.332.286-.81.321-1.181.089-.848-.53-1.768-.912-2.734-1.135-.426-.099-.739-.462-.772-.898l-.18-2.341-2.148.001-.18 2.34c-.033.437-.347.8-.772.898-.967.223-1.887.604-2.734 1.135-.37.232-.849.197-1.181-.089l-1.785-1.529-1.52 1.52 1.529 1.784c.285.332.321.811.089 1.181-.53.848-.912 1.768-1.135 2.734-.099.426-.462.739-.898.772l-2.341.18.002 2.148 2.34.18c.437.033.8.347.898.772.223.967.604 1.887 1.135 2.734.232.37.196.849-.089 1.181l-1.529 1.784 1.52 1.52 1.784-1.529c.332-.287.813-.32 1.18-.089z" id="XMLID_1646_" fill="#7D8590"></path><path d="m16 23c-3.859 0-7-3.141-7-7s3.141-7 7-7 7 3.141 7 7-3.141 7-7 7zm0-12c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z" fill="#7D8590" id="XMLID_1645_"></path></svg>
+      Account
+    </button>
+  
+    <button class="value">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="svg8"><g transform="translate(-33.022 -30.617)" id="layer1"><path d="m49.021 31.617c-2.673 0-4.861 2.188-4.861 4.861 0 1.606.798 3.081 1.873 3.834h-7.896c-1.7 0-3.098 1.401-3.098 3.1s1.399 3.098 3.098 3.098h4.377l.223 2.641s-1.764 8.565-1.764 8.566c-.438 1.642.55 3.355 2.191 3.795s3.327-.494 3.799-2.191l2.059-5.189 2.059 5.189c.44 1.643 2.157 2.631 3.799 2.191s2.63-2.153 2.191-3.795l-1.764-8.566.223-2.641h4.377c1.699 0 3.098-1.399 3.098-3.098s-1.397-3.1-3.098-3.1h-7.928c1.102-.771 1.904-2.228 1.904-3.834 0-2.672-2.189-4.861-4.862-4.861zm0 2c1.592 0 2.861 1.27 2.861 2.861 0 1.169-.705 2.214-1.789 2.652-.501.203-.75.767-.563 1.273l.463 1.254c.145.393.519.654.938.654h8.975c.626 0 1.098.473 1.098 1.1s-.471 1.098-1.098 1.098h-5.297c-.52 0-.952.398-.996.916l-.311 3.701c-.008.096-.002.191.018.285 0 0 1.813 8.802 1.816 8.82.162.604-.173 1.186-.777 1.348s-1.184-.173-1.346-.777c-.01-.037-3.063-7.76-3.063-7.76-.334-.842-1.525-.842-1.859 0 0 0-3.052 7.723-3.063 7.76-.162.604-.741.939-1.346.777s-.939-.743-.777-1.348c.004-.019 1.816-8.82 1.816-8.82.02-.094.025-.189.018-.285l-.311-3.701c-.044-.518-.477-.916-.996-.916h-5.297c-.627 0-1.098-.471-1.098-1.098s.472-1.1 1.098-1.1h8.975c.419 0 .793-.262.938-.654l.463-1.254c.188-.507-.062-1.07-.563-1.273-1.084-.438-1.789-1.483-1.789-2.652.001-1.591 1.271-2.861 2.862-2.861z" id="path26276" fill="#7D8590"></path></g></svg>
+      Accessibility
+    </button>
+    <button class="value">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none"><path fill-rule="evenodd" fill="#7D8590" d="m11.9572 4.31201c-3.35401 0-6.00906 2.59741-6.00906 5.67742v3.29037c0 .1986-.05916.3927-.16992.5576l-1.62529 2.4193-.01077.0157c-.18701.2673-.16653.5113-.07001.6868.10031.1825.31959.3528.67282.3528h14.52603c.2546 0 .5013-.1515.6391-.3968.1315-.2343.1117-.4475-.0118-.6093-.0065-.0085-.0129-.0171-.0191-.0258l-1.7269-2.4194c-.121-.1695-.186-.3726-.186-.5809v-3.29037c0-1.54561-.6851-3.023-1.7072-4.00431-1.1617-1.01594-2.6545-1.67311-4.3019-1.67311zm-8.00906 5.67742c0-4.27483 3.64294-7.67742 8.00906-7.67742 2.2055 0 4.1606.88547 5.6378 2.18455.01.00877.0198.01774.0294.02691 1.408 1.34136 2.3419 3.34131 2.3419 5.46596v2.97007l1.5325 2.1471c.6775.8999.6054 1.9859.1552 2.7877-.4464.795-1.3171 1.4177-2.383 1.4177h-14.52603c-2.16218 0-3.55087-2.302-2.24739-4.1777l1.45056-2.1593zm4.05187 11.32257c0-.5523.44772-1 1-1h5.99999c.5523 0 1 .4477 1 1s-.4477 1-1 1h-5.99999c-.55228 0-1-.4477-1-1z" clip-rule="evenodd"></path></svg>
+      Notifications
+    </button>
+  </div>
+
+<div class="bodycontain" id="bodycontain">
+
+  <div class="header">
+    <h1>Manual Billing | Account Log</h1>
+    <h2>Date<input type="date" id="inputField"></h2>
+  </div>
+  <table class="centered-table">
+    <thead>
+      <tr>
+        <th>Customer</th>
+        <th>Payer</th>
+        <th>Portal</th>
+        <th>NOP</th>
+        <th>✔</th>
+        <th>AM Coordinator</th>
+        <th>PM Coordinator</th>
+        <th>Comments</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!--OK Foods | Bachoco-----------<input type="text" name="" id="customer">--> 
+        <td>OK Foods | Bachoco</td>
+        <td>72328</td>
+        <td>eBillia</td>
+        <td class="nop">
+          <select name="options" class="decorated" id="mySelect">
+            <option value="option0"></option>
+            <option value="option1">1</option>
+            <option value="option2">2</option>
+            <option value="option3">3</option>
+            <option value="option4">4</option>
+            <option value="option5">5</option>
+            <option value="option6">6</option>
+            <option value="option7">7</option>
+            <option value="option8">8</option>
+            <option value="option9">9</option>
+            <option value="option10+">10+</option>
+          </select>
+        </td>
+        <td>
+          <label class="container" >
+            <input type="checkbox" id="checkbox1">
+            <div class="checkmark"></div>
+          </label>
+        </td>
+        <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+          <select name="options" class="decorated" id="select1">
+            <option value="optiona"></option>
+            <option value="optionb">Maciel</option>
+            <option value="optionc">Yvette</option>
+            <option value="optiond">Angel</option>
+            <option value="optione">Scott</option>
+          </select>
+        </td>
+        <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+          <select name="options" class="decorated" id="select2">
+            <option value="optiona"></option>
+            <option value="optionb">Maciel</option>
+            <option value="optionc">Yvette</option>
+            <option value="optiond">Angel</option>
+            <option value="optione">Scott</option>
+          </select>
+        </td>
+        <td><input type="text"></td>
+      </tr>
+      <!-- Repeat the above <tr> block 9 more times for a total of 11 rows -->
+        <tr>
+          <td>Commodity Credit</td>
+          <td>305741</td>
+          <td>USDA</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect2">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox2">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select3">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select4">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+          <td>Kraft Heinz</td>
+          <td>380648</td>
+          <td>Tungsten</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect3">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox3">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select5">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select6">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+          <td>Tyson Foods</td>
+          <td>400124</td>
+          <td>Taulia</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect4">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox4">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select7">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select8">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+          <td>Costco MX</td>
+          <td>400250</td>
+          <td>CostcoMX</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect5">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox5">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select9">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select10">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Metro Canada</td>
+          <td>72391</td>
+          <td>iTrade + SPS</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect6">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox6">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select11">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select12">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Loblaws INC</td>
+          <td>72070</td>
+          <td>SPS</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect7">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox7">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select13">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select14">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>The North West</td>
+          <td>386778</td>
+          <td>Spice IO</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect8">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox8">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select15">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select16">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+          <td>Save on Foods</td>
+          <td>395189</td>
+          <td>SPS Grocery</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect9">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox9">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select17">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select18">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Basset & Walker</td>
+          <td>329020</td>
+          <td>Trade Cafe</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect10">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox10">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select19">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select20">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Gordon Foods</td>
+          <td>302235</td>
+          <td>GFS</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect11">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox11">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select21">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select22">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Hill's Pet Nutrition</td>
+          <td>389775</td>
+          <td>Taulia</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect12">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox12">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select23">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select24">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>General Mills</td>
+          <td>303350</td>
+          <td>Taulia</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect13">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox13">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select25">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select26">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>YUM! Brands Inc</td>
+          <td>306047</td>
+          <td>InvoiceWorks</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect14">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox14">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select27">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select28">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Farm Boy</td>
+          <td>386722</td>
+          <td>DI Central</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect15">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox15">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select29">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select30">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Labatt Foods</td>
+          <td>301226</td>
+          <td>Labatt Service</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect16">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox16">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select31">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select32">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Target Corp.</td>
+          <td>373798</td>
+          <td>Synergy</td>
+          <td class="nop">
+            <select name="options" class="decorated" id="mySelect17">
+              <option value="option0"></option>
+              <option value="option1">1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+              <option value="option4">4</option>
+              <option value="option5">5</option>
+              <option value="option6">6</option>
+              <option value="option7">7</option>
+              <option value="option8">8</option>
+              <option value="option9">9</option>
+              <option value="option10+">10+</option>
+            </select>
+          </td>
+          <td>
+            <label class="container" >
+              <input type="checkbox" id="checkbox17">
+              <div class="checkmark"></div>
+            </label>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select33">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td class="radio"><input name="radio" type="radio" class="input" checked="checked">
+            <select name="options" class="decorated" id="select34">
+              <option value="optiona"></option>
+              <option value="optionb">Maciel</option>
+              <option value="optionc">Yvette</option>
+              <option value="optiond">Angel</option>
+              <option value="optione">Scott</option>
+            </select>
+          </td>
+          <td><input type="text"></td>
+        </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan ='8'></td>
+      </tr>
+    </tfoot>
+  </table>
+  <div class="excel">
+    <button class="animated-button">
+      <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+        ></path>
+      </svg>
+      <span class="text">Export to Excel</span>
+      <span class="circle"></span>
+      <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+        ></path>
+      </svg>
+    </button>
+
+  </div>
+  <div class="header2">
+    <h1>VFX3 | SO Report</h1>
+  </div>
+  <table class="vfx3">
+    <thead>
+      <tr>
+        <th colspan ='3'>Sales Areas</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0001</td>
+        <td>3030</td>
+        <td>6010</td>
+      </tr>
+      <tr>
+        <td>0011</td>
+        <td>3100</td>
+        <td>6015</td>
+      </tr>
+      <tr>
+        <td>0012</td>
+        <td>3410</td>
+        <td>6020</td>
+
+      </tr>
+      <tr>
+        <td>0015</td>
+        <td>4005</td>
+        <td>6300</td>
+
+      </tr>
+      <tr>
+        <td>0071</td>
+        <td>4700</td>
+        <td>8010</td>
+
+      </tr>
+      <tr>
+        <td>0072</td>
+        <td>4710</td>
+        <td>8030</td>
+
+      </tr>
+      <tr>
+        <td>3025</td>
+        <td>6005</td>
+        <td>8040</td>
+
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+  <div class="header2">
+    <h1>IDOC Report</h1>
+  </div>
+  <table class="vfx4">
+    <thead>
+      <tr>
+        <th>AM Check</th>
+        <th>PM Check</th>
+        <th colspan="3">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>3030</td>
+        <td colspan="3" rowspan="7">51 cleared</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>3100</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>3410</td>
+
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>4005</td>
+
+      </tr>
+      <tr>
+        <td>71</td>
+        <td>4700</td>
+
+      </tr>
+      <tr>
+        <td>72</td>
+        <td>4710</td>
+      </tr>
+      <tr>
+        <td>3025</td>
+        <td>6005</td>
+
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+<div class="footer">
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
