@@ -29,8 +29,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // Save the checkbox state whenever it changes
         checkbox.addEventListener('change', () => {
             localStorage.setItem(checkbox.id, checkbox.checked);
-        });
-    });
+
+        // Check all checkboxes if the trigger checkbox is checked
+        if (checkbox.id === 'checkbox0') {
+            checkAllBoxes(checkbox.checked);
+        }
+    });  
+  });
 });
 
 function loadCheckboxState(checkbox) {
@@ -97,4 +102,53 @@ document.getElementById('toggleButton').addEventListener('click', function() {
     } else {
         sidebar.style.left = '0px'; // Move sidebar to the original position
     }
+});
+
+/**------------------------------------------------------------------------------------------ */
+// Function to check or uncheck all checkboxes
+function checkAllBoxes(isChecked) {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    checkboxes.forEach(checkbox => {
+        if(checkbox.id !== 'theme-checkbox') {
+        checkbox.checked = isChecked;
+        localStorage.setItem(checkbox.id, isChecked);
+      }
+    });
+}
+document.addEventListener('DOMContentLoaded', (event) => {
+    const selectElements = document.querySelectorAll('select.decorated');
+
+    function saveSelectElements() {
+        selectElements.forEach((select, index) => {
+            localStorage.setItem(`select_${index}`, select.selectedIndex);
+        });
+    }
+
+    function loadSelectElements() {
+        selectElements.forEach((select, index) => {
+            const savedIndex = localStorage.getItem(`select_${index}`);
+            if (savedIndex !== null) {
+                select.selectedIndex = savedIndex;
+            }
+        });
+    }
+
+    function resetSelectElements() {
+        selectElements.forEach(select => {
+            select.selectedIndex = 0;
+        });
+        saveSelectElements(); // Save the reset state
+    }
+
+    // Load the saved state on page load
+    loadSelectElements();
+
+    // Save the state on change
+    selectElements.forEach(select => {
+        select.addEventListener('change', saveSelectElements);
+    });
+
+    // Add reset button functionality
+    document.getElementById('resetButton').addEventListener('click', resetSelectElements);
 });
